@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Signika:wght@300..700&display=swap');
+
+
+:root{
+    --gap: 50;
+    --delay: 1s;
+}
+body{
+    height: 250vh;
+    width: 100%;
+    position: relative;
+    background-color: black;
+    /*
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    */
+}
+.name{
+    font-family: "Kaushan Script", cursive;
+    color: red;
+    position: fixed;
+    font-size: 3em;
+    margin-left: 78%;
+    margin-top: 2%;
+}
+.orbit{
+    /*
+    height: calc(120px + 20px * var(--order));    
+    width: calc(120px + 20px * var(--order));
+    */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px dashed whitesmoke;
+}
+.planet{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /*
+    transform: translate(-50%,-50%);
+    */
+    border-radius: 50%;
+}
+.planet::after{
+    position: absolute;
+    content: '';
+    border-radius: 50%;
+    z-index: 5;
+}
+.sun{
+    height: 160px;
+    width: 160px;
+    background-image: radial-gradient(circle, #f9d71c 0%, #f9a825 50%, #f9a825 100%);
+}
+.meo{
+    height: 390px;
+    width: 390px;
+}
+.veo{
+    height: 620px;
+    width: 620px;
+}
+.eao{
+    height: 850px;
+    width: 850px;
+}
+.mao{
+    height: 1080px;
+    width: 1080px;
+}
+.juo{
+    height: 1310px;
+    width: 1310px;
+}
+.sao{
+    height: 1540px;
+    width: 1540px;
+}
+.uro{
+    height: 1770px;
+    width: 1770px;
+}
+.neo{
+    height: 2000px;
+    width: 2000px;
+}
+.mercury{
+    top: calc(50% - 195px);
+    left: calc(50% - 195px);
+    animation: 0.6s rotate linear infinite;
+}
+.venus{
+    top: calc(50% - 310px);
+    left: calc(50% - 310px);
+    animation: 1.8s rotate linear infinite;
+}
+.earth{
+    top: calc(50% - 425px);
+    left: calc(50% - 425px);
+    animation: 3s rotate linear infinite;
+}
+.mars{
+    top: calc(50% - 540px);
+    left: calc(50% - 540px);
+    animation: 5.4s rotate linear infinite;
+}
+.jupiter{
+    top: calc(50% - 655px);
+    left: calc(50% - 655px);
+    animation: 33s rotate linear infinite;
+}
+.saturn{
+    top: calc(50% - 770px);
+    left: calc(50% - 770px);
+    animation: 57s rotate linear infinite;
+}
+.uranus{
+    top: calc(50% - 885px);
+    left: calc(50% - 885px);
+    animation: 240s rotate linear infinite;
+}
+.neptune{
+    top: calc(50% - 1000px);
+    left: calc(50% - 1000px);
+    animation: 450s rotate linear infinite;
+}
+.mercury::after{
+    height: 30px;
+    width: 30px;
+    background-image: radial-gradient(circle, #c2c2c2 0%, #8a8a8a 100%);
+    transform: translate(140%,140%);
+}
+.venus::after{
+    height: 50px;
+    width: 50px;
+    background-image: radial-gradient(circle, #f4d03f 0%, #c39c43 100%);
+    transform: translate(130%,130%);
+}
+.earth::after{
+    height: 70px;
+    width: 70px;
+    background-image: radial-gradient(circle, #3a82f7 0%, #2f9e44 80%, #1a5e20 100%);
+    transform: translate(130%,130%);
+}
+.mars::after{
+    height: 60px;
+    width: 60px;
+    background-image: radial-gradient(circle, #e57373 0%, #af4448 100%);
+    transform: translate(210%,210%);
+}
+.jupiter::after{
+    height: 110px;
+    width: 110px;
+    background-image: radial-gradient(circle, #d4a373 0%, #b36d32 50%, #f4e7d3 100%);
+    transform: translate(130%,130%);
+}
+.saturn::after{
+    height: 90px;
+    width: 90px;
+    background-image: radial-gradient(circle, #e6dba0 0%, #c2a13e 100%);
+    transform: translate(200%,200%);
+}
+.uranus::after{
+    height: 80px;
+    width: 80px;
+    background-image: radial-gradient(circle, #7de3f4 0%, #3ba0b5 100%);
+    transform: translate(275%,275%);
+}
+.neptune::after{
+    height: 80px;
+    width: 80px;
+    background-image: radial-gradient(circle, #4c6ef5 0%, #1b3b8c 100%);
+    transform: translate(315%,315%);
+}
+
+
+
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
